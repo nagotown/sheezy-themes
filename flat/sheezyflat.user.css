@@ -1,1 +1,43 @@
+/* ==UserStyle==
+@name           sheezy flat - shadows begone!
+@version        1.0.0
+@description    makes sheezy flat
+@updateURL      https://raw.githubusercontent.com/shiibeh/sheezy-themes/main/flat/sheezyflat.user.css
+// author things
+@namespace      tart / hook
+@author         tart / hook
+@homepageURL    https://github.com/shiibeh/sheezy-themes/tree/main/flat
+@supportURL     https://github.com/shiibeh/sheezy-themes/issues
+==/UserStyle== */
 
+@-moz-document domain("sheezy.art"),
+domain("www.sheezy.art") {
+    * {
+        box-shadow: none!important;
+        text-shadow: none!important;
+    }
+    .profile__cover {
+        z-index: 100;
+        position: relative;
+        background: none repeat center bottom;
+        background-size: auto 100%;
+    }
+    .modal__title:before,
+    .profile__ribbon:before,
+    .modal__buttons:before,
+    .site__logo {
+        background: none;
+        box-shadow: none;
+        -webkit-filter: none;
+        filter: none;
+    }
+
+    .profile-photo {
+        -webkit-filter: none;
+        filter: none;
+    }
+
+    .site__footer {
+        background: #4f6878;
+    }
+}
